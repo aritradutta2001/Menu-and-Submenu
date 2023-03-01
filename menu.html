@@ -1,0 +1,86 @@
+<html>
+<head>
+<style>
+body
+{
+    background-color: rgb(109, 231, 237);
+}
+.menu
+{
+    list-style: none;
+    margin: 2px;
+    padding: 2px;
+}
+.menu li 
+{
+    background-color: #000000fa;
+    float: left;
+    padding: 0.5em 1.8em;
+    margin-left: 5px;
+    text-align: center;
+    height: 20px;
+    width: 100px;
+    font-size: 20px;
+    border-bottom: 4px #e33232 solid;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.menu li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.menu li a:hover
+{
+    color: rgb(35, 16, 180);
+}
+ul ul
+{
+    list-style: none;
+    margin: 10px;
+    padding: 2px;
+    display: none;
+    
+}
+li li{
+    margin-top: 1px;
+}
+.menu li:hover ul
+{
+    display : block;
+}
+.a
+{
+    display:none;
+}
+.menu li ul li:hover .a
+{
+    display : block;
+    margin-left: 50px; 
+}
+</style>
+</head>
+<body>
+<center>
+<ul class ="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a>
+        <ul>
+            <li><a href="#">CRM</a></li>
+            <li><a href="#">HRM</a></li>
+            <li><a href="#">ERP</a>
+                <div class="a">
+                <ul>
+                    <li><a href="#">hr</a></li>
+                    <li><a href="#">finance</a></li>
+                </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+</center>
